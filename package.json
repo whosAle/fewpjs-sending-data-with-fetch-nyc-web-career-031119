@@ -4,7 +4,8 @@
   "description": "A JavaScript lab",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "fakeDB": "json-server --watch db.json",
+    "test": "mocha --timeout 5000"
   },
   "author": "flatironschool",
   "license": "Included in Repo",
